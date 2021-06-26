@@ -1,0 +1,76 @@
+.todos-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .todos-header {
+    font-size: 3rem;
+    font-family: 'Benne', serif;
+    margin: 2rem auto 1rem;
+  }
+
+  .thumbnail {
+    width: 25em;
+    height: 20em;
+    padding: 0.4rem 0.4rem;
+    border: 1px solid #aaa;
+    box-shadow: 0.2rem 0.5rem 0.8rem #aaa;
+    border-radius: 0.2rem;
+    margin: 0 auto 2rem;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      border-radius: 0.2rem;
+      background-size: cover;
+    }
+  }
+
+  .todo-form {
+    width: 25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    // width: 95%;
+
+    .todo-input {
+      width: 100%;
+      margin-right: 0.2rem;
+      margin-top: -1px;
+    }
+  }
+
+  .todos-list {
+    list-style: none;
+    width: 25em;
+    padding: 0;
+
+    .todo-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0.2rem 0.5rem;
+      border: 1px solid #aaa;
+      border-radius: 0.4rem;
+      margin: 0.3rem auto;
+
+      .todo-btns {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .is-invalid {
+    color: red;
+  }
+
+  .empty-list {
+    font-size: 3rem;
+    // font-family: 'Benne', serif;
+    margin: 2rem auto 1rem;
+  }
+}
